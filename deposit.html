@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="icon-wallet.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Depositar</title>
+  </head>
+  <body class="deposit">
+    <div
+      class="container d-flex flex-column justify-content-center align-items-start bg-light p-5 bg-white rounded-4 shadow"
+    >
+      <h2>Depositar</h2>
+      <form>
+        <div class="form-group">
+          <label for="amount">Monto a depositar</label>
+          <input type="number" id="amount" placeholder="Ingrese monto" />
+        </div>
+        <button id="deposit__button" class="btn btn-primary" type="submit">
+          Realizar deposito
+        </button>
+      </form>
+      <a href="menu.html" class="btn btn-secondary">Volver al Menú Principal</a>
+    </div>
+    <script src="deposit.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="icon-wallet.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Inicio de sesión</title>
+  </head>
+  <body class="login">
+    <div
+      class="container d-flex justify-content-center align-items-center bg-light p-5 bg-white rounded-4 shadow"
+    >
+      <form id="login__form">
+        <h2>Inicio de sesión</h2>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control login_email"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            class="form-control login-password"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <button type="submit" id="login__button" class="btn btn-primary">
+          Iniciar sesión
+        </button>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

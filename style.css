@@ -1,0 +1,47 @@
+body {
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input-group-text {
+  width: 34%;
+}
+
+.login {
+  margin: 0;
+  background: linear-gradient(90deg, #f2aacb, #16a2c0);
+}
+
+.menu {
+  background: linear-gradient(
+    90deg,
+    #9c89b8,
+    #f0a6ca,
+    #efc3e6,
+    #f0e6ef,
+    #b8bedd
+  );
+}
+
+.deposit {
+  background: linear-gradient(90deg, #59ade1, #96d5ee, #d493c1);
+}
+
+.sendmoney {
+  background: linear-gradient(90deg, #de9cb8, #9dcde1, #dc8eb8, #98d3ec);
+}
+
+.transactions {
+  background: linear-gradient(
+    90deg,
+    #d181f0,
+    #cedcf2,
+    #dcf2ce,
+    #f2cedc,
+    #ffbf6e
+  );
+}
