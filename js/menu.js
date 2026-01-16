@@ -38,6 +38,13 @@ function notifyAndRedirect(selector, screen, screenName) {
   });
 }
 
+$("#btn-logout-nav").on("click", function () {
+  // Opcional: Si quieres borrar los datos al salir, descomenta la siguiente línea:
+  // localStorage.clear();
+
+  // Redirigir al Login (index.html está fuera de la carpeta pages)
+  window.location.href = "../index.html";
+});
 $(function () {
   updateBalanceDisplay();
 
