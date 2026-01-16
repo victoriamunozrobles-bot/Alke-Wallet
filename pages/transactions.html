@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="icon-wallet.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <title>Últimos movimientos</title>
+  </head>
+  <body class="transactions">
+    <div
+      class="container d-flex flex-column justify-content-center align-items-start bg-light p-5 bg-white rounded-4 shadow"
+    >
+      <h2>Ultimos movimientos</h2>
+      <select id="filter-transactions" class="form-control mb-3">
+        <option value="todos">Todos los movimientos</option>
+        <option value="Depósito">Depósitos</option>
+        <option value="Transferencia">Transferencias</option>
+      </select>
+
+      <ul id="transactions-list" class="list-group"></ul>
+      <div class="mb-3">
+        <button id="btn-back-menu" class="btn btn-outline-secondary">
+          <i class="fas fa-arrow-left"></i> Volver al Menú
+        </button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/transactions.js"></script>
+  </body>
+</html>

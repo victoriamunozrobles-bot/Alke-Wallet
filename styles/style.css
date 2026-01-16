@@ -27,6 +27,9 @@ body {
   );
 }
 
+.btn {
+  margin-top: 2%;
+}
 .deposit {
   background: linear-gradient(90deg, #59ade1, #96d5ee, #d493c1);
 }

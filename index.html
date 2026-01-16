@@ -8,13 +8,17 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Inicio de sesión</title>
   </head>
   <body class="login">
     <div
       class="container d-flex justify-content-center align-items-center bg-light p-5 bg-white rounded-4 shadow"
     >
+      <div
+        id="alert-wrapper"
+        style="position: fixed; top: 20px; right: 20px; z-index: 1050"
+      ></div>
       <form id="login__form">
         <h2>Inicio de sesión</h2>
         <div class="mb-3">
@@ -42,6 +46,6 @@
       </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="login.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>
