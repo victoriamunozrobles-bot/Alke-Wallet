@@ -1,3 +1,5 @@
+console.log("Depositos funciona");
+
 const BALANCE_KEY = "wallet_total_balance";
 
 function loadCurrentBalance() {
