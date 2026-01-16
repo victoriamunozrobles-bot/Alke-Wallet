@@ -62,3 +62,9 @@ $(function () {
     window.location.href = "menu.html";
   });
 });
+
+$(function () {
+  $("#btn-logout-nav").on("click", function () {
+    window.location.href = "../index.html";
+  });
+});

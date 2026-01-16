@@ -1,7 +1,7 @@
 const BALANCE_KEY = "wallet_total_balance";
 const CONTACTS_KEY = "wallet_contacts";
 
-function showBootstrapAlert(message, type = "info") {
+function showAlert(message, type = "info") {
   const alertHtml = `
     <div class="alert alert-${type} alert-dismissible fade show shadow" role="alert">
       ${message}
@@ -42,12 +42,12 @@ function saveNewContact() {
   };
 
   if (Object.values(newContact).some((val) => val === "")) {
-    showBootstrapAlert("Todos los campos son obligatorios.", "warning");
+    showAlert("Todos los campos son obligatorios.", "warning");
     return;
   }
 
   if (!isAccountValid(newContact.account)) {
-    showBootstrapAlert(
+    showAlert(
       "El CBU/Cuenta debe contener solo números (mínimo 10).",
       "danger"
     );
@@ -59,9 +59,10 @@ function saveNewContact() {
   currentContacts.push(newContact);
   localStorage.setItem(CONTACTS_KEY, JSON.stringify(currentContacts));
 
-  showBootstrapAlert("Contacto guardado con éxito.", "success");
+  showAlert("Contacto guardado con éxito.", "success");
   $("#contact-form")[0].reset();
   $("#staticBackdrop").modal("hide");
+  $("#save-contact-btn").prop("disabled", true);
   renderContacts();
 }
 
@@ -105,18 +106,18 @@ function executeTransfer() {
   const selectedContact = $("#transferModal").data("selectedContact");
 
   if (!selectedContact) {
-    showBootstrapAlert("Debe seleccionar un destinatario.", "danger");
+    showAlert("Debe seleccionar un destinatario.", "danger");
     return;
   }
 
   if (amountStr === "" || isNaN(amount) || amount <= 0) {
-    showBootstrapAlert("Por favor, ingresa un monto válido.", "warning");
+    showAlert("Por favor, ingresa un monto válido.", "warning");
     $("#transfer-amount").addClass("is-invalid");
     return;
   }
 
   if (amount > currentBalance) {
-    showBootstrapAlert(
+    showAlert(
       `Saldo insuficiente. Tu saldo es: $${currentBalance.toLocaleString()}`,
       "danger"
     );
@@ -153,11 +154,11 @@ function executeTransfer() {
       </div>
     `);
 
-    showBootstrapAlert("¡Transferencia exitosa!", "success");
+    showAlert("¡Transferencia exitosa!", "success");
     $("#transferModal").modal("hide");
 
     setTimeout(() => {
-      window.location.href = "pages/menu.html";
+      window.location.href = "menu.html";
     }, 2500);
   }
 }
@@ -170,6 +171,23 @@ function saveToHistory(movement) {
 
 $(function () {
   renderContacts();
+
+  const $contactInputs = $(
+    "#contact-name, #contact-lastname, #contact-acc, #contact-alias, #contact-bank"
+  );
+  const $saveBtn = $("#save-contact-btn");
+
+  $saveBtn.prop("disabled", true);
+
+  $contactInputs.on("input change", function () {
+    let hasEmpty = false;
+    $contactInputs.each(function () {
+      if ($(this).val().trim() === "") {
+        hasEmpty = true;
+      }
+    });
+    $saveBtn.prop("disabled", hasEmpty);
+  });
 
   $("#new-contact").on("click", function () {
     $("#staticBackdrop").modal("show");
@@ -193,5 +211,15 @@ $(function () {
 
   $("input").on("input", function () {
     $(this).removeClass("is-invalid is-valid");
+  });
+
+  $("#btn-back-menu").on("click", function () {
+    window.location.href = "menu.html";
+  });
+});
+
+$(function () {
+  $("#btn-logout-nav").on("click", function () {
+    window.location.href = "../index.html";
   });
 });
