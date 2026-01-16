@@ -7,7 +7,7 @@ El proyecto está construido con un enfoque **Mobile First**, utilizando **Boots
 ## 🚀 Tecnologías Utilizadas
 
 - **HTML5:** Estructura semántica.
-- **CSS3:** Estilos personalizados, gradientes y efectos de Glassmorphism (efecto cristal).
+- **CSS3:** Estilos personalizados y gradientes.
 - **Bootstrap 4.6:** Framework para diseño responsivo, sistema de grillas, modales y componentes de UI.
 - **JavaScript (ES6):** Lógica de negocio.
 - **jQuery 3.6:** Manipulación del DOM, manejo de eventos y selectores simplificados.
