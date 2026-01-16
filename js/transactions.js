@@ -1,3 +1,5 @@
+console.log("transacciones funciona");
+
 function getTipoTransaccion(tipo) {
   const tipos = {
     Depósito: "Depósito Realizado",
