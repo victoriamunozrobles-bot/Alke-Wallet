@@ -1,3 +1,5 @@
+console.log("transacciones funciona");
+
 function getTipoTransaccion(tipo) {
   const tipos = {
     Depósito: "Depósito Realizado",
@@ -60,5 +62,11 @@ $(function () {
 
   $("#btn-back-menu").on("click", function () {
     window.location.href = "menu.html";
+  });
+});
+
+$(function () {
+  $("#btn-logout-nav").on("click", function () {
+    window.location.href = "../index.html";
   });
 });

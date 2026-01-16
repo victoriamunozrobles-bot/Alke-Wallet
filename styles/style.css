@@ -1,14 +1,28 @@
 body {
   padding: 20px;
-}
-
-.container {
-  max-width: 400px;
-  margin: 0 auto;
+  overflow: auto;
 }
 
 .input-group-text {
   width: 34%;
+}
+
+.nav-link-custom {
+  color: #fff !important;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  padding: 8px 20px !important;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link-custom:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
 }
 
 .login {
@@ -29,15 +43,51 @@ body {
 
 .btn {
   margin-top: 2%;
+  margin-left: 2%;
 }
 .deposit {
   background: linear-gradient(90deg, #59ade1, #96d5ee, #d493c1);
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+.form-control {
+  box-shadow: none !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.input-group-text {
+  color: #495057;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
 }
 
 .sendmoney {
   background: linear-gradient(90deg, #de9cb8, #9dcde1, #dc8eb8, #98d3ec);
 }
 
+.dashed-border {
+  border-style: dashed !important;
+  border-width: 2px !important;
+}
+
+.custom-select {
+  background: #f8f9fa
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+    no-repeat right 0.75rem center/8px 10px;
+}
 .transactions {
   background: linear-gradient(
     90deg,
@@ -47,4 +97,33 @@ body {
     #f2cedc,
     #ffbf6e
   );
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 5px;
+  border-radius: 10px !important;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
 }

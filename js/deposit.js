@@ -1,3 +1,5 @@
+console.log("Depositos funciona");
+
 const BALANCE_KEY = "wallet_total_balance";
 
 function loadCurrentBalance() {
@@ -80,5 +82,11 @@ $(function () {
   $("#deposit__button").on("click", function (event) {
     event.preventDefault();
     makeDeposit();
+  });
+});
+
+$(function () {
+  $("#btn-logout-nav").on("click", function () {
+    window.location.href = "../index.html";
   });
 });
