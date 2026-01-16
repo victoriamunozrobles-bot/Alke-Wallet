@@ -1,3 +1,5 @@
+console.log("Login funciona");
+
 function showBootstrapAlert(message, type = "info") {
   const alertHtml = `
     <div class="alert alert-${type} alert-dismissible fade show shadow" role="alert">
