@@ -6,7 +6,9 @@ El proyecto está construido con un enfoque **Mobile First**, utilizando **Boots
 
 ## Para ver el código fuente, ingrese aquí ---> https://github.com/victoriamunozrobles-bot/Alke-Wallet.git
 
-## Para la página web, ingrese aquí ---> https://victoriamunozrobles-bot.github.io/Alke-Wallet/
+## Para ver la página web, ingrese aquí ---> https://victoriamunozrobles-bot.github.io/Alke-Wallet/
+
+Debes ingresar un correo electrónico válido y una contraseña cualquiera de ocho dígitos o más.
 
 ## 🚀 Tecnologías Utilizadas
 
