@@ -4,6 +4,10 @@ Alke Wallet es una aplicación web de billetera digital que simula las funcional
 
 El proyecto está construido con un enfoque **Mobile First**, utilizando **Bootstrap 4** para la maquetación responsiva y **jQuery** para la lógica del lado del cliente y manipulación del DOM. La persistencia de datos se maneja a través de **LocalStorage**.
 
+## Para ver el código fuente, ingrese aquí ---> https://github.com/victoriamunozrobles-bot/Alke-Wallet.git
+
+## Para la página web, ingrese aquí ---> https://victoriamunozrobles-bot.github.io/Alke-Wallet/
+
 ## 🚀 Tecnologías Utilizadas
 
 - **HTML5:** Estructura semántica.
